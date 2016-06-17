@@ -396,6 +396,9 @@ ul#menu > li:hover ul {
     opacity:1;
     pointer-events: all;
 }
+ul#menu.close > li ul {
+    display:none;
+}
 
 #menu li.with-submenu:hover {
     border-top-left-radius: 10px;
@@ -533,3 +536,20 @@ a.back {
 }
 a.back:hover { opacity:1; }
 #page.expanded a.back { display:block; }
+
+.article-not-found {
+    position:relative;
+    color:#cccccc;
+    text-align:center;
+    top:20vh;
+}
+
+.loading {
+    background:url('../img/loading.gif') center center no-repeat;
+    position:relative;
+    top:20vh;
+    margin: auto;
+    width:100px;
+    height:100px;
+    opacity:0.5;
+}
