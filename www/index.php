@@ -16,35 +16,35 @@
     <div id="wrapper">
     <header>
         <table id="header"><tr>
-        <td class="logo-depinfo"><img id="logo-depinfo" src="img/logo-depinfo.png" onclick='open_article();'></td>
+        <td class="logo-depinfo"><a id="logo-depinfo" href="#/"><img src="img/logo-depinfo.png"></a></td>
         <td class="logo-ucp"><a id="logo-ucp" href="https://www.u-cergy.fr/"><img src="img/logo-ucp.png"></a></td>
         </tr>
         <tr><td colspan=3 height=1px class="menu">
         <ul id="menu">
-            <li><a href="licence/">Licence</a></li>
+            <li><a href="#licence/">Licence</a></li>
             <li class="with-submenu">
-                <a href="licencespro/">Licences pro</a>
+                <a href="javascript:void(0)">Licences pro</a>
                 <div class="submenu"><ul>
-                    <li><a href="lpcccm/">LPCCCM - Chargé de communication culturelle et multimédia</a></li>
-                    <li><a href="lpdw/">LPDW - Développeur web</a></li>
-                    <li><a href="lpiwm/">LPIWM - Infographie, webdesign et multimédia</a></li>
-                    <li><a href="lprs/">LPRS - Réseaux et Sécurité</a></li>
-                    <li><a href="lpwam/">LPWAM - Web et applications mobiles</a></li>
+                    <li><a href="#lpcccm/">LPCCCM - Chargé de communication culturelle et multimédia</a></li>
+                    <li><a href="#lpdw/">LPDW - Développeur web</a></li>
+                    <li><a href="#lpiwm/">LPIWM - Infographie, webdesign et multimédia</a></li>
+                    <li><a href="#lprs/">LPRS - Réseaux et Sécurité</a></li>
+                    <li><a href="#lpwam/">LPWAM - Web et applications mobiles</a></li>
                 </ul></div>
             </li>
             <li class="with-submenu">
-                <a href="master/">Master</a>
+                <a href="javascript:void(0)">Master</a>
                 <div class="submenu"><ul>
-                    <li><a href="master1/">M1-IISC - Master 1</a></li>
-                    <li><a href="master2pro/">M2-IISC-Pro - Master 2 Professionnel</a></li>
-                    <li><a href="master2recherche/">M2-IISC-R - Master 2 Recherche</a></li>
+                    <li><a href="#master1/">M1-IISC - Master 1</a></li>
+                    <li><a href="#master2pro/">M2-IISC-Pro - Master 2 Professionnel</a></li>
+                    <li><a href="#master2recherche/">M2-IISC-R - Master 2 Recherche</a></li>
                 </ul></div>
             </li>
-            <li><a href="cmi/">CMI</a></li>
-            <li><a href="relations-entreprises/">Relations Entreprises</a></li>
-            <li><a href="vie-etudiante/">Vie etudiante</a></li>
-            <li><a href="presse/">Presse</a></li>
-            <li><a href="contacts/">Contacts</a></li>
+            <li><a href="#cmi/">CMI</a></li>
+            <li><a href="#relations-entreprises/">Relations Entreprises</a></li>
+            <li><a href="#vie-etudiante/">Vie etudiante</a></li>
+            <li><a href="#presse/">Presse</a></li>
+            <li><a href="#contacts/">Contacts</a></li>
 
             <form action="./" method="get"><input value="Rechercher..." type=text name="q"></input></form>
             <ul id="social">
@@ -80,6 +80,7 @@
 
     <td class="center" width="*">
         <div>
+    <a class="back" href="#/"><img src="img/back.png"></a>
     <div id="content">
         <?php include('pages/main.html'); ?>
     </div>
