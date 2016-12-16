@@ -1,6 +1,9 @@
 #!/bin/sh
 
 while true; do
-	inotifywait www
-	rsync -rav --delete www/* jfellus@depinfo.u-cergy.fr:/var/www/depinfo-dev
+	rsync -rav www/* jfellus@depinfo.u-cergy.fr:/var/www/depinfo-dev
+	rsync -rav pages/*.sh jfellus@depinfo.u-cergy.fr:/var/www-data/pages
+	rsync -rav pages/conf.d jfellus@depinfo.u-cergy.fr:/var/www-data/pages
+	rsync -rav pages/mammoth-* jfellus@depinfo.u-cergy.fr:/var/www-data/pages
+	inotifywait .
 done

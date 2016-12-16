@@ -7,12 +7,20 @@
     <meta name="description" content="Intéressé par les sciences informatiques ? Venez étudier au Département des Sciences Informatiques de l&#39;université de Cergy-Pontoise !">
     <title>Université de Cergy Pontoise - Département des Sciences Informatiques</title>
     <link rel="stylesheet" href="./style/main.css" type="text/css">
+    <link rel="stylesheet" href="./style/articles.css" type="text/css">
     <link rel="stylesheet" href="./style/font-benchnine.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="./js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="./js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
+
+    <button id="update">Detecter les changements</button>
+    <button id="publish">Publier</button>
+    <button id="update-2">###Detecter les changements###</button>
+    <button id="publish-2">###Publier###</button>
+
     <div id="wrapper">
     <header>
         <table id="header"><tr>
@@ -25,19 +33,19 @@
             <li class="with-submenu">
                 <a href="javascript:void(0)">Licences pro</a>
                 <div class="submenu"><ul>
-                    <li><a href="#lpcccm/">LPCCCM - Chargé de communication culturelle et multimédia</a></li>
-                    <li><a href="#lpdw/">LPDW - Développeur web</a></li>
-                    <li><a href="#lpiwm/">LPIWM - Infographie, webdesign et multimédia</a></li>
-                    <li><a href="#lprs/">LPRS - Réseaux et Sécurité</a></li>
-                    <li><a href="#lpwam/">LPWAM - Web et applications mobiles</a></li>
+                    <li><a href="#licence/lpcccm/">LPCCCM - Chargé de communication culturelle et multimédia</a></li>
+                    <li><a href="#licence/lpdw/">LPDW - Développeur web</a></li>
+                    <li><a href="#licence/lpiwm/">LPIWM - Infographie, webdesign et multimédia</a></li>
+                    <li><a href="#licence/lprs/">LPRS - Réseaux et Sécurité</a></li>
+                    <li><a href="#licence/lpwam/">LPWAM - Web et applications mobiles</a></li>
                 </ul></div>
             </li>
             <li class="with-submenu">
                 <a href="javascript:void(0)">Master</a>
                 <div class="submenu"><ul>
                     <li><a href="#master1/">M1-IISC - Master 1</a></li>
-                    <li><a href="#master2pro/">M2-IISC-Pro - Master 2 Professionnel</a></li>
-                    <li><a href="#master2recherche/">M2-IISC-R - Master 2 Recherche</a></li>
+                    <li><a href="#master2/pro">M2-IISC-Pro - Master 2 Professionnel</a></li>
+                    <li><a href="#master2/recherche">M2-IISC-R - Master 2 Recherche</a></li>
                 </ul></div>
             </li>
             <li><a href="#cmi/">CMI</a></li>

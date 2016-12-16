@@ -1,5 +1,5 @@
 function load_article(article) {
-	$("#menu").addClass("close"); setTimeout(function(){$("#menu").removeClass("close");},500);
+	$("#menu").addClass("close"); setTimeout(function(){$("#menu").removeClass("close");},1000);
 	$("#content").html("<div class='loading'></div>");
 	if(!article) article = "pages/main.html";
 	else article = "pages/articles/"+article+".html";
@@ -28,4 +28,33 @@ window.onhashchange = function() {
 
 $(function(){
 	window.onhashchange();
+
+
+	$("#update-2").click(function(){
+		$.get( "update.php", function( data ) {
+			console.log(data);
+			//location.reload();
+		});
+	});
+
+	$("#publish-2").click(function(){
+		$.get( "publish.php", function( data ) {
+			console.log(data);
+			//location.href = "https://depinfo.u-cergy.fr/depinfo-release";
+		});
+	});
+
+		$("#update").click(function(){
+			$.get( "update.php", function( data ) {
+				//console.log(data);
+				location.reload();
+			});
+		});
+
+		$("#publish").click(function(){
+			$.get( "publish.php", function( data ) {
+				//console.log(data);
+				location.href = "https://depinfo.u-cergy.fr/depinfo-release";
+			});
+		});
 });
