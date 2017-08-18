@@ -8,36 +8,15 @@
     <title>Département des Sciences Informatiques - Université de Cergy Pontoise</title>
     <link rel="stylesheet" href="./style/main.css" type="text/css">
     <link rel="stylesheet" href="./style/articles.css" type="text/css">
-    <link rel="stylesheet" href="./style/edit.css" type="text/css">
     <link rel="stylesheet" href="./style/font-benchnine.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type='text/css'>
     <link href="./style/favicon.ico" rel="shortcut icon">
     <link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="./js/tinymce/js/tinymce/tinymce.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="./js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="./js/main.js" type="text/javascript"></script>
-    <script type="text/javascript" src="./js/edit.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <button id="show-dev" onclick="$('body').toggleClass('admin');show_dev();">*</button>
-    <div id="editor">
-        <button id="update" onclick="edit_save()">Sauvegarder</button>
-        <button id="publish">Publier</button>
-        <button id="update-2" style="display:none;">###Detecter les changements###</button>
-        <button id="publish-2" style="display:none;">###Publier###</button>
-        <button onclick="selection_apply_title()">Title</button>
-        <button onclick="selection_apply_h2()">h2</button>
-        <button onclick="selection_apply_h3()">h3</button>
-        <button onclick="selection_apply_a()">a</button>
-        <button onclick="selection_apply_bloc()">Bloc</button>
-        <button onclick="ajouter_ul()">ul</button>
-        <button onclick="ajouter_ol()">ol</button>
-        <button onclick="ajouter_image()">img</button>
-        <button class="only-for IMG" onclick="selection_image_class('right')">Float Right</button>
-    </div>
-    <div id="img_catalog" style="display:none">
-    </div>
     <div id="wrapper">
     <header>
         <a id="show-menu" onclick="$('#menu').addClass('on');" href="javascript:void(0);">&#9776;</a>
@@ -126,18 +105,16 @@
     <td class='right'>
     <div id="news">
     <?php
-        $news_dir = scandir('pages/news', 1);
+        $news_dir = scandir('pages/news');
         foreach($news_dir as $v) {
             if($v == '.' || $v == '..') continue;
     ?>
-        <div class="news" idd="<?= $v ?>">
+        <div class="news">
             <?php include('pages/news/'.$v); ?>
         </div>
     <?php
         }
      ?>
-
-
 
     </div>
     </td>
